@@ -110,4 +110,4 @@ URL:
 1. Need to remove the hard coded reference to layout4 in the package. The user needs to be able to choose which layout they want to use.
 2. Perhaps I can give the user an option to dynamically choose the layout they want to use. The Javascript layout file would need to be loaded dynamically before the Metronic.init(). If I don't do this here, the problem of load-order rears it's ugly head.
 3. The custom.css files need to be extracted from the package. These need to be defined in the Meteor project.
-4. For some unknown reason if I reference the assets in the package via **/package/rudolf_assets-meronic/theme_rtl/assets/global/plugins/font-awesome/css/font-awesome.min.css** then the icons of fontawesome are not loaded.
+4. For some unknown reason if I reference assets in the package via **/package/rudolf_assets-meronic/theme_rtl/assets/global/plugins/font-awesome/css/font-awesome.min.css** then the icons of fontawesome are not loaded. No idea why. For the moment I will ignore the CSS files in the package and reference these directly in the public folder of my project.

@@ -1,6 +1,6 @@
 Package.describe({
     name: 'rudolf:assets-metronic',
-    version: '1.0.28',
+    version: '1.0.29',
     // Brief, one-line summary of the package.
     summary: 'Base javascript files for using metronic in a meteor client app',
     // URL to the Git repository containing the source code for this package.
@@ -13,7 +13,7 @@ Package.describe({
 function getFilesFromFolder(folder) {
 
     // The folder could be a windows folder or Linux folder.
-    // The fs npm module requires the correct path seperator for
+    // The fs npm module requires the correct path separator for
 
     // local imports
     var _ = Npm.require("underscore");
@@ -71,7 +71,7 @@ Package.onUse(function (api) {
 
      // -----------------------------------------------------------------------------------------------
 
-     // Addional files for *bootstrap.min.js*
+     // Additional files for *bootstrap.min.js*
      clientFiles = getFilesFromFolder("theme_rtl/assets/global/plugins/bootstrap/css");
      console.log(clientFiles);
      console.log();
@@ -86,7 +86,7 @@ Package.onUse(function (api) {
 
      // -----------------------------------------------------------------------------------------------
 
-     // Addional files for *fontawesome*
+     // Additional files for *fontawesome*
      clientFiles = getFilesFromFolder("theme_rtl/assets/global/plugins/font-awesome/css");
      console.log(clientFiles);
      console.log();
@@ -101,7 +101,7 @@ Package.onUse(function (api) {
 
      // -----------------------------------------------------------------------------------------------
 
-     // Addional files for *bootstrap-switch.min.js*
+     // Additional files for *bootstrap-switch.min.js*
      clientFiles = getFilesFromFolder("theme_rtl/assets/global/plugins/bootstrap-switch/css");
      console.log(clientFiles);
      console.log();
@@ -110,7 +110,7 @@ Package.onUse(function (api) {
 
      // -----------------------------------------------------------------------------------------------
 
-     // Addional files for *metronic.js*
+     // Additional files for *metronic.js*
      clientFiles = getFilesFromFolder("theme_rtl/assets/global/css");
      console.log(clientFiles);
      console.log();
@@ -125,7 +125,7 @@ Package.onUse(function (api) {
 
      // -----------------------------------------------------------------------------------------------
 
-     // Addional files for *layout.js*
+     // Additional files for *layout.js*
      clientFiles = getFilesFromFolder("theme_rtl/assets/admin/layout4/css");
      console.log(clientFiles);
      console.log();
