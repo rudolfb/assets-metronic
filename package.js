@@ -1,6 +1,6 @@
 Package.describe({
     name: 'rudolf:assets-metronic',
-    version: '1.0.29',
+    version: '1.0.30',
     // Brief, one-line summary of the package.
     summary: 'Base javascript files for using metronic in a meteor client app',
     // URL to the Git repository containing the source code for this package.
