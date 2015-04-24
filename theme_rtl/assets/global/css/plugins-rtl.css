@@ -77,12 +77,35 @@ Bootstrap Datepicker
   text-align: right;
 }
 
-.input-daterange input:first-child {
-border-radius: 0 3px 3px 0;
+.datepicker .input-daterange input:first-child {
+  border-radius: 0 3px 3px 0;
 }
 
-.input-daterange input:last-child {
-border-radius: 3px 0 0 3px;
+.datepicker .input-daterange input:last-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.datepicker .fa-angle-right:before {
+  content: "\f104";
+}
+
+.datepicker .fa-angle-left:before {
+  content: "\f105";
+}
+
+.datepicker-dropdown {
+  left: auto !important;
+}
+
+
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: auto !important;
+  right: 6px !important;
+}
+
+.datepicker-dropdown.datepicker-orient-left:after {
+  left: auto !important;
+  right: 7px !important;  
 }
 
 /* change z-index when opened in modal */
@@ -142,6 +165,17 @@ Bootstrap Daterangepicker
 .daterangepicker .ranges label {
   font-weight: 300;
   display: block;
+}
+
+.daterangepicker .ranges {
+  width: 170px;
+}
+.daterangepicker .ranges ul > li.active {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .daterangepicker .ranges .btn {
@@ -614,6 +648,30 @@ Bootstrap Wizard
     text-align: right;
   }
 }
+/*!
+ * Tab drop for Bootstrap
+ */
+.tabbable-tabdrop .nav-tabs,
+.tabbable-tabdrop .nav-pills {
+  position: relative;
+}
+.tabbable-tabdrop .nav-tabs .caret,
+.tabbable-tabdrop .nav-pills .caret {
+  display: none;
+}
+.tabbable-tabdrop .nav-tabs .tabdrop .dropdown-toggle i,
+.tabbable-tabdrop .nav-pills .tabdrop .dropdown-toggle i {
+  font-size: 14px;
+}
+.tabbable-tabdrop .dropdown-menu:after {
+  left: 10px;
+  right: auto;
+}
+.tabbable-tabdrop .dropdown-menu:before {
+  left: 9px;
+  right: auto;
+}
+
 /***
 wysihtml5
 ***/
@@ -721,8 +779,8 @@ Bootstrap GtreeTable
 .gtreetable .node-icon-handle,
 .gtreetable .node-icon-ce,
 .gtreetable .node-icon-type {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
 }
 
 /***
@@ -1131,6 +1189,22 @@ Scroller Extension
   border-bottom: 1px solid #ddd !important;
 }
 
+.DTTT_Print_Info {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  margin-top: -50px;
+  margin-right: -150px;
+  background: #eee;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.DTTT_Print_Info > h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 /***
 Dropzone css changes(new in v1.1.1)
 ***/
@@ -1216,11 +1290,11 @@ Fullcalendar
   color: #fff;
   top: -45px;
   outline: none !important;
-  -webkit-border-radius: 4px 4px 0 0;
-  -moz-border-radius: 4px 4px 0 0;
-  -ms-border-radius: 4px 4px 0 0;
-  -o-border-radius: 4px 4px 0 0;
-  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 .portlet.calendar .fc-toolbar {
   margin-bottom: 0px;
@@ -2202,6 +2276,17 @@ Bootstrap input sizes
   background-position: 0 0px;
 }
 
+/* Portlet full screen mode */
+.modal-open.page-portlet-fullscreen .select2-drop-mask {
+  z-index: 10081;
+}
+.modal-open.page-portlet-fullscreen .select2-drop {
+  z-index: 10082;
+}
+.modal-open.page-portlet-fullscreen .select2-search {
+  z-index: 10083;
+}
+
 /***
 jQuery Uniform
 ***/
@@ -2302,22 +2387,22 @@ div[class*='iradio_'] {
   height: 20px;
   width: 20px;
   background: #000000;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
 }
 .icheck-colors > li:first-child {
   margin-right: 0;
 }
 .icheck-colors > li:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
+  opacity: 1 ;
+  filter: alpha(opacity=100) ;
   cursor: pointer;
 }
 .icheck-colors > li.active {
   height: 26px;
   margin-top: 0;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
 }
 .icheck-colors > li.red {
   background: #d54e21;
@@ -2355,407 +2440,6 @@ AngularJS UI-select
   margin-right: 5px !important;
 }
 
-/***
-Select2 Plugin
-***/
-.ui-jqgrid.ui-widget-content {
+.minicolors-swatch {
   border: 0;
-  background: none;
-}
-.ui-jqgrid .ui-jqgrid-hdiv {
-  border: 0;
-}
-.ui-jqgrid .ui-jqgrid-htable {
-  border: 0;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column {
-  height: auto;
-  padding: 12px 8px;
-  text-align: right;
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #6E819A;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column div {
-  overflow: visible;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column .s-ico .ui-icon-asc {
-  background-image: url("../plugins/jqgrid/images/sort_asc.png");
-  background-position: 2px 4px;
-  height: 19px;
-  left: 0px;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column .s-ico .ui-icon-asc.ui-state-disabled {
-  display: none;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column .s-ico .ui-icon-desc {
-  background-image: url("../plugins/jqgrid/images/sort_desc.png");
-  background-position: 2px -4px;
-  height: 19px;
-  left: 0px;
-}
-.ui-jqgrid .ui-jqgrid-htable th.ui-th-column .s-ico .ui-icon-desc.ui-state-disabled {
-  display: none;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content {
-  border: 0;
-  background: #FDFDFE;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content td {
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #8b9ba8;
-  padding: 8px 8px !important;
-  border: 0;
-  border-left: 1px solid #F1F6FA;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content:nth-child(odd) {
-  background: #FDFDFE;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content:nth-child(even) {
-  background: #F6F9FB;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content.ui-state-highlight {
-  background: #b6cfdf;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content.ui-state-highlight td {
-  color: #738797;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content.ui-state-hover {
-  background: #c5d8e5;
-}
-.ui-jqgrid .ui-jqgrid-btable tr.ui-widget-content.ui-state-hover td {
-  color: #7f919f;
-}
-.ui-jqgrid .ui-state-default,
-.ui-jqgrid .ui-widget-header .ui-state-default {
-  border: 1px solid #F2F4F9;
-  background: #EAF0F9;
-}
-.ui-jqgrid .ui-jqgrid-pager {
-  height: 40px;
-  overflow: visible;
-  clear: both;
-}
-.ui-jqgrid .ui-jqgrid-pager .ui-pager-control {
-  height: 40px;
-}
-.ui-jqgrid .ui-jqgrid-pager .ui-pager-control .ui-paging-info {
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #8b9ba8;
-}
-
-.ui-jqdialog-content select,
-.ui-jqdialog-content .FormElement,
-.ui-jqdialog-content .input-elm,
-.ui-jqdialog-content .ui-pg-input,
-.ui-jqdialog-content .ui-pg-selbox,
-.ui-jqdialog-content .editable,
-.ui-jqgrid select,
-.ui-jqgrid .FormElement,
-.ui-jqgrid .input-elm,
-.ui-jqgrid .ui-pg-input,
-.ui-jqgrid .ui-pg-selbox,
-.ui-jqgrid .editable {
-  height: auto !important;
-  padding: 5px 10px;
-  font-size: 13px !important;
-  font-weight: normal;
-  color: #333;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-.ui-jqdialog-content select::-moz-placeholder,
-.ui-jqdialog-content .FormElement::-moz-placeholder,
-.ui-jqdialog-content .input-elm::-moz-placeholder,
-.ui-jqdialog-content .ui-pg-input::-moz-placeholder,
-.ui-jqdialog-content .ui-pg-selbox::-moz-placeholder,
-.ui-jqdialog-content .editable::-moz-placeholder,
-.ui-jqgrid select::-moz-placeholder,
-.ui-jqgrid .FormElement::-moz-placeholder,
-.ui-jqgrid .input-elm::-moz-placeholder,
-.ui-jqgrid .ui-pg-input::-moz-placeholder,
-.ui-jqgrid .ui-pg-selbox::-moz-placeholder,
-.ui-jqgrid .editable::-moz-placeholder {
-  color: #b3b3b3;
-  opacity: 1;
-}
-.ui-jqdialog-content select:-ms-input-placeholder,
-.ui-jqdialog-content .FormElement:-ms-input-placeholder,
-.ui-jqdialog-content .input-elm:-ms-input-placeholder,
-.ui-jqdialog-content .ui-pg-input:-ms-input-placeholder,
-.ui-jqdialog-content .ui-pg-selbox:-ms-input-placeholder,
-.ui-jqdialog-content .editable:-ms-input-placeholder,
-.ui-jqgrid select:-ms-input-placeholder,
-.ui-jqgrid .FormElement:-ms-input-placeholder,
-.ui-jqgrid .input-elm:-ms-input-placeholder,
-.ui-jqgrid .ui-pg-input:-ms-input-placeholder,
-.ui-jqgrid .ui-pg-selbox:-ms-input-placeholder,
-.ui-jqgrid .editable:-ms-input-placeholder {
-  color: #b3b3b3;
-}
-.ui-jqdialog-content select::-webkit-input-placeholder,
-.ui-jqdialog-content .FormElement::-webkit-input-placeholder,
-.ui-jqdialog-content .input-elm::-webkit-input-placeholder,
-.ui-jqdialog-content .ui-pg-input::-webkit-input-placeholder,
-.ui-jqdialog-content .ui-pg-selbox::-webkit-input-placeholder,
-.ui-jqdialog-content .editable::-webkit-input-placeholder,
-.ui-jqgrid select::-webkit-input-placeholder,
-.ui-jqgrid .FormElement::-webkit-input-placeholder,
-.ui-jqgrid .input-elm::-webkit-input-placeholder,
-.ui-jqgrid .ui-pg-input::-webkit-input-placeholder,
-.ui-jqgrid .ui-pg-selbox::-webkit-input-placeholder,
-.ui-jqgrid .editable::-webkit-input-placeholder {
-  color: #b3b3b3;
-}
-.ui-jqdialog-content select:focus,
-.ui-jqdialog-content .FormElement:focus,
-.ui-jqdialog-content .input-elm:focus,
-.ui-jqdialog-content .ui-pg-input:focus,
-.ui-jqdialog-content .ui-pg-selbox:focus,
-.ui-jqdialog-content .editable:focus,
-.ui-jqgrid select:focus,
-.ui-jqgrid .FormElement:focus,
-.ui-jqgrid .input-elm:focus,
-.ui-jqgrid .ui-pg-input:focus,
-.ui-jqgrid .ui-pg-selbox:focus,
-.ui-jqgrid .editable:focus {
-  border-color: #999;
-  outline: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.ui-jqdialog-content select[disabled], .ui-jqdialog-content select[readonly], fieldset[disabled] .ui-jqdialog-content select,
-.ui-jqdialog-content .FormElement[disabled],
-.ui-jqdialog-content .FormElement[readonly], fieldset[disabled]
-.ui-jqdialog-content .FormElement,
-.ui-jqdialog-content .input-elm[disabled],
-.ui-jqdialog-content .input-elm[readonly], fieldset[disabled]
-.ui-jqdialog-content .input-elm,
-.ui-jqdialog-content .ui-pg-input[disabled],
-.ui-jqdialog-content .ui-pg-input[readonly], fieldset[disabled]
-.ui-jqdialog-content .ui-pg-input,
-.ui-jqdialog-content .ui-pg-selbox[disabled],
-.ui-jqdialog-content .ui-pg-selbox[readonly], fieldset[disabled]
-.ui-jqdialog-content .ui-pg-selbox,
-.ui-jqdialog-content .editable[disabled],
-.ui-jqdialog-content .editable[readonly], fieldset[disabled]
-.ui-jqdialog-content .editable,
-.ui-jqgrid select[disabled],
-.ui-jqgrid select[readonly], fieldset[disabled]
-.ui-jqgrid select,
-.ui-jqgrid .FormElement[disabled],
-.ui-jqgrid .FormElement[readonly], fieldset[disabled]
-.ui-jqgrid .FormElement,
-.ui-jqgrid .input-elm[disabled],
-.ui-jqgrid .input-elm[readonly], fieldset[disabled]
-.ui-jqgrid .input-elm,
-.ui-jqgrid .ui-pg-input[disabled],
-.ui-jqgrid .ui-pg-input[readonly], fieldset[disabled]
-.ui-jqgrid .ui-pg-input,
-.ui-jqgrid .ui-pg-selbox[disabled],
-.ui-jqgrid .ui-pg-selbox[readonly], fieldset[disabled]
-.ui-jqgrid .ui-pg-selbox,
-.ui-jqgrid .editable[disabled],
-.ui-jqgrid .editable[readonly], fieldset[disabled]
-.ui-jqgrid .editable {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-}
-.ui-jqdialog-content select,
-.ui-jqgrid select {
-  padding: 5px 10px 6px 10px;
-}
-.ui-jqdialog-content .ui-pg-input,
-.ui-jqgrid .ui-pg-input {
-  padding: 2px 6px !important;
-}
-.ui-jqdialog-content .ui-pg-selbox,
-.ui-jqgrid .ui-pg-selbox {
-  padding: 3px 6px 2px 6px !important;
-}
-
-.ui-jqdialog {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  min-width: 400px;
-  color: #6E819A;
-  outline: none !important;
-  padding: 0;
-  border: 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  background: #ffffff;
-}
-.ui-jqdialog .ui-jqdialog-titlebar {
-  padding: 10px 15px;
-  border: 0;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-}
-.ui-jqdialog .ui-jqdialog-titlebar .ui-jqdialog-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-  color: #62748d;
-}
-.ui-jqdialog .ui-jqdialog-titlebar .ui-jqdialog-titlebar-close {
-  display: inline-block;
-  outline: none;
-  background-image: url("../img/remove-icon-small.png") !important;
-  background-repeat: no-repeat !important;
-  width: 9px;
-  height: 9px;
-  left: 15px !important;
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-}
-.ui-jqdialog .ui-jqdialog-titlebar .ui-jqdialog-titlebar-close .ui-icon-closethick {
-  background: none;
-}
-.ui-jqdialog .ui-jqdialog-titlebar .ui-jqdialog-titlebar-close.ui-state-hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  text-decoration: none;
-  border: 0;
-  background: none;
-}
-.ui-jqdialog .searchFilter,
-.ui-jqdialog #alertcnt_jqgrid {
-  padding: 15px;
-}
-.ui-jqdialog .ui-jqdialog-content {
-  margin: 0;
-  padding: 0;
-  background: #ffffff;
-}
-.ui-jqdialog .ui-jqdialog-content .EditTable {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.ui-jqdialog .ui-jqdialog-content .EditTable .EditButton {
-  padding: 10px 15px !important;
-}
-.ui-jqdialog .ui-jqdialog-content .FormGrid {
-  padding: 15px;
-  width: 100% !important;
-  margin-bottom: 10px;
-}
-.ui-jqdialog .ui-jqdialog-content .FormGrid .FormData td {
-  padding: 5px 0;
-}
-.ui-jqdialog .ui-jqdialog-content .FormGrid .FormElement {
-  width: 98%;
-}
-.ui-jqdialog .ui-jqdialog-content .FormGrid .DataTD {
-  vertical-align: center !important;
-}
-.ui-jqdialog .ui-jqdialog-content #Act_Buttons {
-  border-top: 1px solid #eee;
-}
-.ui-jqdialog .ui-jqdialog-content #Act_Buttons td {
-  padding: 10px 0;
-}
-.ui-jqdialog .ui-jqdialog-content hr.ui-widget-content {
-  display: none;
-}
-.ui-jqdialog .CaptionTD {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #6E819A;
-}
-
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div {
-  border: 0;
-  padding: 7px 7px;
-  font-size: 13px;
-  outline: none !important;
-  background-image: none !important;
-  filter: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div.dropdown-toggle, .btn-group .ui-jqgrid-pager .ui-pg-button .ui-pg-div.dropdown-toggle, .ui-jqgrid-pager .ui-pg-button .ui-pg-div:hover, .ui-jqgrid-pager .ui-pg-button .ui-pg-div:disabled, .ui-jqgrid-pager .ui-pg-button .ui-pg-div[disabled], .ui-jqgrid-pager .ui-pg-button .ui-pg-div:focus, .ui-jqgrid-pager .ui-pg-button .ui-pg-div:active, .ui-jqgrid-pager .ui-pg-button .ui-pg-div.active {
-  outline: none !important;
-  background-image: none !important;
-  filter: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon {
-  padding: 0;
-  background: none !important;
-  display: inline-block;
-  font-size: 14px;
-  text-align: center;
-  font-family: FontAwesome;
-  background-position: 0 0;
-  text-indent: 0;
-  width: 20px !important;
-  height: 20px !important;
-  color: #999;
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-plus:before {
-  content: "\f067";
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-pencil:before {
-  content: "\f040";
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-document:before {
-  content: "\f0f6";
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-trash:before {
-  content: "\f014";
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-search:before {
-  content: "\f002";
-}
-.ui-jqgrid-pager .ui-pg-button .ui-pg-div .ui-icon.ui-icon-refresh:before {
-  content: "\f021";
-}
-.ui-jqgrid-pager .ui-pg-button.ui-state-hover {
-  border: 0;
-  background: none;
-  padding: 0;
-}
-.ui-jqgrid-pager .ui-pg-button.ui-state-hover .ui-pg-div {
-  border: 0;
-}
-.ui-jqgrid-pager .ui-pg-button.ui-state-hover .ui-pg-div .ui-icon {
-  font-size: 14px;
-}
-
-.ui-jqgrid-pager,
-.ui-jqdialog,
-.ui-jqgrid {
-  /* Allow Font Awesome Icons in lieu of jQuery UI and only apply when using a FA icon */
-}
-.ui-jqgrid-pager .ui-icon[class*=" icon-"],
-.ui-jqdialog .ui-icon[class*=" icon-"],
-.ui-jqgrid .ui-icon[class*=" icon-"] {
-  /* Remove the jQuery UI Icon */
-  background: none repeat scroll 0 0 transparent !important;
-  /* Remove the jQuery UI Text Indent */
-  text-indent: 0;
-  /* Bump it up - jQuery UI is -8px */
-  margin-top: -0.5em;
-}
-.ui-jqgrid-pager .ui-button-icon-only .ui-icon[class*=" icon-"],
-.ui-jqdialog .ui-button-icon-only .ui-icon[class*=" icon-"],
-.ui-jqgrid .ui-button-icon-only .ui-icon[class*=" icon-"] {
-  /* Bump it - jQuery UI is -8px */
-  margin-right: -7px;
 }

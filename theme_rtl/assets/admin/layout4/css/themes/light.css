@@ -11,6 +11,9 @@ Body bg color
 body {
   background: #e9ecf3;
 }
+body.page-md {
+  background: #f3f5f9;
+}
 
 /*********** 
 Page Header

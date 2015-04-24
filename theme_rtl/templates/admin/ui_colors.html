@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
-Version: 3.6.3
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 3.8.1
 Author: KeenThemes
 Website: http://www.keenthemes.com/
 Contact: support@keenthemes.com
@@ -30,7 +30,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="../../assets/global/css/components-rtl.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -77,7 +77,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-bell"></i>
 					<span class="badge badge-default">
 					7 </span>
@@ -187,7 +187,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN INBOX DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-envelope-open"></i>
 					<span class="badge badge-default">
 					4 </span>
@@ -277,7 +277,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN TODO DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-calendar"></i>
 					<span class="badge badge-default">
 					3 </span>
@@ -374,7 +374,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-user">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
 					Nick </span>
@@ -781,7 +781,13 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
+							<a href="form_controls_md.html">
+							<span class="badge badge-roundless badge-danger">new</span>Material Design<br>
+							Form Controls</a>
+						</li>
+						<li>
 							<a href="form_controls.html">
+							Bootstrap<br>
 							Form Controls</a>
 						</li>
 						<li>
@@ -1160,27 +1166,27 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="email_template1/index.html" target="_blank">
+							<a href="email_template1.html">
 							New Email Template 1</a>
 						</li>
 						<li>
-							<a href="email_template2/index.html" target="_blank">
+							<a href="email_template2.html">
 							New Email Template 2</a>
 						</li>
 						<li>
-							<a href="email_template3/index.html" target="_blank">
+							<a href="email_template3.html">
 							New Email Template 3</a>
 						</li>
 						<li>
-							<a href="email_template4/index.html" target="_blank">
+							<a href="email_template4.html">
 							New Email Template 4</a>
 						</li>
 						<li>
-							<a href="email_newsletter.html" target="_blank">
+							<a href="email_newsletter.html">
 							Old Email Template 1</a>
 						</li>
 						<li>
-							<a href="email_system.html" target="_blank">
+							<a href="email_system.html">
 							Old Email Template 2</a>
 						</li>
 					</ul>
@@ -1256,6 +1262,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
 							</li>
 						</ul>
+					</div>
+					<div class="theme-option">
+						<span>
+						Theme Style </span>
+						<select class="layout-style-option form-control input-sm">
+							<option value="square" selected="selected">Square corners</option>
+							<option value="rounded">Rounded corners</option>
+						</select>
 					</div>
 					<div class="theme-option">
 						<span>
@@ -1377,7 +1391,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							 Just apply the color class(e.g: <code>.blue-madison</code>) to Metronic portlets, buttons, statistic blocks, tiles and other containers.
 						</p>
 					</div>
-					<div class="tabbable tabbable-custom">
+					<div class="tabbable-line">
 						<ul class="nav nav-tabs">
 							<li class="active">
 								<a href="#tab__blue" data-toggle="tab">
@@ -1442,28 +1456,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue">Default</button>
-													<a href="#" class="btn blue"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue">Dropdown</button>
 														<button type="button" class="btn blue dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -1566,7 +1580,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1584,7 +1598,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1602,7 +1616,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1620,7 +1634,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1757,28 +1771,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue-hoki">Default</button>
-													<a href="#" class="btn blue-hoki"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-hoki-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue-hoki"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-hoki-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue-hoki">Dropdown</button>
 														<button type="button" class="btn blue-hoki dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -1881,7 +1895,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1899,7 +1913,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1917,7 +1931,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -1935,7 +1949,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2072,28 +2086,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue-steel">Default</button>
-													<a href="#" class="btn blue-steel"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-steel-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue-steel"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-steel-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue-steel">Dropdown</button>
 														<button type="button" class="btn blue-steel dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -2196,7 +2210,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2214,7 +2228,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2232,7 +2246,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2250,7 +2264,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2387,28 +2401,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue-madison">Default</button>
-													<a href="#" class="btn blue-madison"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-madison-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue-madison"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-madison-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue-madison">Dropdown</button>
 														<button type="button" class="btn blue-madison dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -2511,7 +2525,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2529,7 +2543,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2547,7 +2561,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2565,7 +2579,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2702,28 +2716,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue-chambray">Default</button>
-													<a href="#" class="btn blue-chambray"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-chambray-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue-chambray"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-chambray-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue-chambray">Dropdown</button>
 														<button type="button" class="btn blue-chambray dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -2826,7 +2840,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2844,7 +2858,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2862,7 +2876,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -2880,7 +2894,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3017,28 +3031,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn blue-ebonyclay">Default</button>
-													<a href="#" class="btn blue-ebonyclay"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default blue-ebonyclay-stripe">Stripe</a>
+													<a href="javascript:;" class="btn blue-ebonyclay"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default blue-ebonyclay-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn blue-ebonyclay">Dropdown</button>
 														<button type="button" class="btn blue-ebonyclay dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -3141,7 +3155,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3159,7 +3173,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3177,7 +3191,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3195,7 +3209,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3363,28 +3377,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green">Default</button>
-													<a href="#" class="btn green"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green">Dropdown</button>
 														<button type="button" class="btn green dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -3487,7 +3501,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3505,7 +3519,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3523,7 +3537,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3541,7 +3555,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3678,28 +3692,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green-meadow">Default</button>
-													<a href="#" class="btn green-meadow"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-meadow-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green-meadow"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-meadow-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green-meadow">Dropdown</button>
 														<button type="button" class="btn green-meadow dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -3802,7 +3816,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3820,7 +3834,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3838,7 +3852,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3856,7 +3870,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -3993,28 +4007,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green-seagreen">Default</button>
-													<a href="#" class="btn green-seagreen"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-seagreen-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green-seagreen"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-seagreen-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green-seagreen">Dropdown</button>
 														<button type="button" class="btn green-seagreen dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -4117,7 +4131,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4135,7 +4149,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4153,7 +4167,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4171,7 +4185,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4308,28 +4322,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green-turquoise">Default</button>
-													<a href="#" class="btn green-turquoise"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-turquoise-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green-turquoise"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-turquoise-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green-turquoise">Dropdown</button>
 														<button type="button" class="btn green-turquoise dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -4432,7 +4446,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4450,7 +4464,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4468,7 +4482,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4486,7 +4500,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4623,28 +4637,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green-haze">Default</button>
-													<a href="#" class="btn green-haze"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-haze-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green-haze"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-haze-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green-haze">Dropdown</button>
 														<button type="button" class="btn green-haze dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -4747,7 +4761,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4765,7 +4779,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4783,7 +4797,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4801,7 +4815,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -4938,28 +4952,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn green-jungle">Default</button>
-													<a href="#" class="btn green-jungle"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default green-jungle-stripe">Stripe</a>
+													<a href="javascript:;" class="btn green-jungle"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default green-jungle-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn green-jungle">Dropdown</button>
 														<button type="button" class="btn green-jungle dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -5062,7 +5076,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5080,7 +5094,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5098,7 +5112,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5116,7 +5130,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5284,28 +5298,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red">Default</button>
-													<a href="#" class="btn red"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red">Dropdown</button>
 														<button type="button" class="btn red dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -5408,7 +5422,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5426,7 +5440,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5444,7 +5458,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5462,7 +5476,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5599,28 +5613,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red-pink">Default</button>
-													<a href="#" class="btn red-pink"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-pink-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red-pink"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-pink-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red-pink">Dropdown</button>
 														<button type="button" class="btn red-pink dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -5723,7 +5737,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5741,7 +5755,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5759,7 +5773,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5777,7 +5791,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -5914,28 +5928,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red-sunglo">Default</button>
-													<a href="#" class="btn red-sunglo"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-sunglo-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red-sunglo"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-sunglo-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red-sunglo">Dropdown</button>
 														<button type="button" class="btn red-sunglo dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -6038,7 +6052,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6056,7 +6070,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6074,7 +6088,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6092,7 +6106,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6229,28 +6243,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red-intense">Default</button>
-													<a href="#" class="btn red-intense"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-intense-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red-intense"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-intense-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red-intense">Dropdown</button>
 														<button type="button" class="btn red-intense dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -6353,7 +6367,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6371,7 +6385,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6389,7 +6403,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6407,7 +6421,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6544,28 +6558,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red-thunderbird">Default</button>
-													<a href="#" class="btn red-thunderbird"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-thunderbird-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red-thunderbird"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-thunderbird-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red-thunderbird">Dropdown</button>
 														<button type="button" class="btn red-thunderbird dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -6668,7 +6682,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6686,7 +6700,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6704,7 +6718,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6722,7 +6736,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -6859,28 +6873,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn red-flamingo">Default</button>
-													<a href="#" class="btn red-flamingo"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default red-flamingo-stripe">Stripe</a>
+													<a href="javascript:;" class="btn red-flamingo"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default red-flamingo-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn red-flamingo">Dropdown</button>
 														<button type="button" class="btn red-flamingo dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -6983,7 +6997,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7001,7 +7015,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7019,7 +7033,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7037,7 +7051,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7205,28 +7219,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow">Default</button>
-													<a href="#" class="btn yellow"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow">Dropdown</button>
 														<button type="button" class="btn yellow dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -7329,7 +7343,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7347,7 +7361,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7365,7 +7379,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7383,7 +7397,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7520,28 +7534,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow-gold">Default</button>
-													<a href="#" class="btn yellow-gold"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-gold-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow-gold"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-gold-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow-gold">Dropdown</button>
 														<button type="button" class="btn yellow-gold dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -7644,7 +7658,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7662,7 +7676,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7680,7 +7694,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7698,7 +7712,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7835,28 +7849,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow-casablanca">Default</button>
-													<a href="#" class="btn yellow-casablanca"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-casablanca-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow-casablanca"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-casablanca-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow-casablanca">Dropdown</button>
 														<button type="button" class="btn yellow-casablanca dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -7959,7 +7973,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7977,7 +7991,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -7995,7 +8009,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8013,7 +8027,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8150,28 +8164,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow-crusta">Default</button>
-													<a href="#" class="btn yellow-crusta"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-crusta-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow-crusta"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-crusta-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow-crusta">Dropdown</button>
 														<button type="button" class="btn yellow-crusta dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -8274,7 +8288,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8292,7 +8306,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8310,7 +8324,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8328,7 +8342,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8465,28 +8479,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow-lemon">Default</button>
-													<a href="#" class="btn yellow-lemon"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-lemon-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow-lemon"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-lemon-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow-lemon">Dropdown</button>
 														<button type="button" class="btn yellow-lemon dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -8589,7 +8603,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8607,7 +8621,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8625,7 +8639,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8643,7 +8657,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8780,28 +8794,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn yellow-saffron">Default</button>
-													<a href="#" class="btn yellow-saffron"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default yellow-saffron-stripe">Stripe</a>
+													<a href="javascript:;" class="btn yellow-saffron"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default yellow-saffron-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn yellow-saffron">Dropdown</button>
 														<button type="button" class="btn yellow-saffron dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -8904,7 +8918,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8922,7 +8936,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8940,7 +8954,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -8958,7 +8972,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9126,28 +9140,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple">Default</button>
-													<a href="#" class="btn purple"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple">Dropdown</button>
 														<button type="button" class="btn purple dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -9250,7 +9264,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9268,7 +9282,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9286,7 +9300,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9304,7 +9318,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9441,28 +9455,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple-plum">Default</button>
-													<a href="#" class="btn purple-plum"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-plum-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple-plum"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-plum-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple-plum">Dropdown</button>
 														<button type="button" class="btn purple-plum dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -9565,7 +9579,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9583,7 +9597,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9601,7 +9615,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9619,7 +9633,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9756,28 +9770,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple-medium">Default</button>
-													<a href="#" class="btn purple-medium"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-medium-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple-medium"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-medium-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple-medium">Dropdown</button>
 														<button type="button" class="btn purple-medium dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -9880,7 +9894,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9898,7 +9912,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9916,7 +9930,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -9934,7 +9948,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10071,28 +10085,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple-studio">Default</button>
-													<a href="#" class="btn purple-studio"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-studio-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple-studio"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-studio-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple-studio">Dropdown</button>
 														<button type="button" class="btn purple-studio dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -10195,7 +10209,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10213,7 +10227,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10231,7 +10245,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10249,7 +10263,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10386,28 +10400,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple-wisteria">Default</button>
-													<a href="#" class="btn purple-wisteria"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-wisteria-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple-wisteria"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-wisteria-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple-wisteria">Dropdown</button>
 														<button type="button" class="btn purple-wisteria dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -10510,7 +10524,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10528,7 +10542,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10546,7 +10560,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10564,7 +10578,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10701,28 +10715,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn purple-seance">Default</button>
-													<a href="#" class="btn purple-seance"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default purple-seance-stripe">Stripe</a>
+													<a href="javascript:;" class="btn purple-seance"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default purple-seance-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn purple-seance">Dropdown</button>
 														<button type="button" class="btn purple-seance dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -10825,7 +10839,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10843,7 +10857,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10861,7 +10875,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -10879,7 +10893,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11047,28 +11061,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey">Default</button>
-													<a href="#" class="btn grey"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey">Dropdown</button>
 														<button type="button" class="btn grey dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -11171,7 +11185,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11189,7 +11203,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11207,7 +11221,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11225,7 +11239,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11362,28 +11376,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey-cascade">Default</button>
-													<a href="#" class="btn grey-cascade"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-cascade-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey-cascade"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-cascade-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey-cascade">Dropdown</button>
 														<button type="button" class="btn grey-cascade dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -11486,7 +11500,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11504,7 +11518,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11522,7 +11536,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11540,7 +11554,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11677,28 +11691,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey-silver">Default</button>
-													<a href="#" class="btn grey-silver"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-silver-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey-silver"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-silver-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey-silver">Dropdown</button>
 														<button type="button" class="btn grey-silver dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -11801,7 +11815,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11819,7 +11833,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11837,7 +11851,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11855,7 +11869,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -11992,28 +12006,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey-steel">Default</button>
-													<a href="#" class="btn grey-steel"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-steel-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey-steel"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-steel-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey-steel">Dropdown</button>
 														<button type="button" class="btn grey-steel dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -12116,7 +12130,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12134,7 +12148,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12152,7 +12166,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12170,7 +12184,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12307,28 +12321,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey-cararra">Default</button>
-													<a href="#" class="btn grey-cararra"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-cararra-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey-cararra"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-cararra-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey-cararra">Dropdown</button>
 														<button type="button" class="btn grey-cararra dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -12431,7 +12445,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12449,7 +12463,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12467,7 +12481,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12485,7 +12499,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12622,28 +12636,28 @@ License: You must have a valid license purchased only from themeforest(the above
 												<div class="clearfix">
 													<!-- Standard gray button with gradient -->
 													<button type="button" class="btn grey-gallery">Default</button>
-													<a href="#" class="btn grey-gallery"><i class="fa fa-gift"></i> With icon</a>
-													<a href="#" class="btn default grey-gallery-stripe">Stripe</a>
+													<a href="javascript:;" class="btn grey-gallery"><i class="fa fa-gift"></i> With icon</a>
+													<a href="javascript:;" class="btn default grey-gallery-stripe">Stripe</a>
 													<div class="btn-group">
 														<button type="button" class="btn grey-gallery">Dropdown</button>
 														<button type="button" class="btn grey-gallery dropdown-toggle" data-toggle="dropdown"><i class="fa fa-angle-down"></i></button>
 														<ul class="dropdown-menu" role="menu">
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Another action </a>
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Something else here </a>
 															</li>
 															<li class="divider">
 															</li>
 															<li>
-																<a href="#">
+																<a href="javascript:;">
 																Separated link </a>
 															</li>
 														</ul>
@@ -12746,7 +12760,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Feedbacks
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12764,7 +12778,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 New Orders
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12782,7 +12796,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Brand Popularity
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12800,7 +12814,7 @@ License: You must have a valid license purchased only from themeforest(the above
 																	 Total Profit
 																</div>
 															</div>
-															<a class="more" href="#">
+															<a class="more" href="javascript:;">
 															View more <i class="m-icon-swapright m-icon-white"></i>
 															</a>
 														</div>
@@ -12955,7 +12969,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</a>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 							More<i class="fa fa-angle-down"></i>
 							</a>
 							<ul class="dropdown-menu pull-right" role="menu">
@@ -13118,7 +13132,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Bob Nilson</a>
+												<a href="javascript:;" class="name">Bob Nilson</a>
 												<span class="datetime">20:15</span>
 												<span class="body">
 												When could you send me the report ? </span>
@@ -13128,7 +13142,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Ella Wong</a>
+												<a href="javascript:;" class="name">Ella Wong</a>
 												<span class="datetime">20:15</span>
 												<span class="body">
 												Its almost done. I will be sending it shortly </span>
@@ -13138,7 +13152,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Bob Nilson</a>
+												<a href="javascript:;" class="name">Bob Nilson</a>
 												<span class="datetime">20:15</span>
 												<span class="body">
 												Alright. Thanks! :) </span>
@@ -13148,7 +13162,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Ella Wong</a>
+												<a href="javascript:;" class="name">Ella Wong</a>
 												<span class="datetime">20:16</span>
 												<span class="body">
 												You are most welcome. Sorry for the delay. </span>
@@ -13158,7 +13172,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Bob Nilson</a>
+												<a href="javascript:;" class="name">Bob Nilson</a>
 												<span class="datetime">20:17</span>
 												<span class="body">
 												No probs. Just take your time :) </span>
@@ -13168,7 +13182,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Ella Wong</a>
+												<a href="javascript:;" class="name">Ella Wong</a>
 												<span class="datetime">20:40</span>
 												<span class="body">
 												Alright. I just emailed it to you. </span>
@@ -13178,7 +13192,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Bob Nilson</a>
+												<a href="javascript:;" class="name">Bob Nilson</a>
 												<span class="datetime">20:17</span>
 												<span class="body">
 												Great! Thanks. Will check it right away. </span>
@@ -13188,7 +13202,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Ella Wong</a>
+												<a href="javascript:;" class="name">Ella Wong</a>
 												<span class="datetime">20:40</span>
 												<span class="body">
 												Please let me know if you have any comment. </span>
@@ -13198,7 +13212,7 @@ License: You must have a valid license purchased only from themeforest(the above
 											<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 											<div class="message">
 												<span class="arrow"></span>
-												<a href="#" class="name">Bob Nilson</a>
+												<a href="javascript:;" class="name">Bob Nilson</a>
 												<span class="datetime">20:17</span>
 												<span class="body">
 												Sure. I will check and buzz you if anything needs to be corrected. </span>
@@ -13244,7 +13258,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</li>
 									<li>
-										<a href="#">
+										<a href="javascript:;">
 										<div class="col1">
 											<div class="cont">
 												<div class="cont-col1">
@@ -13353,7 +13367,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</li>
 									<li>
-										<a href="#">
+										<a href="javascript:;">
 										<div class="col1">
 											<div class="cont">
 												<div class="cont-col1">
@@ -13402,7 +13416,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</li>
 									<li>
-										<a href="#">
+										<a href="javascript:;">
 										<div class="col1">
 											<div class="cont">
 												<div class="cont-col1">
@@ -13511,7 +13525,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</li>
 									<li>
-										<a href="#">
+										<a href="javascript:;">
 										<div class="col1">
 											<div class="cont">
 												<div class="cont-col1">
@@ -13594,7 +13608,7 @@ License: You must have a valid license purchased only from themeforest(the above
 	<!-- BEGIN FOOTER -->
 	<div class="page-footer">
 		<div class="page-footer-inner">
-			 2014 &copy; Metronic by keenthemes.
+			 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
 		</div>
 		<div class="scroll-to-top">
 			<i class="icon-arrow-up"></i>

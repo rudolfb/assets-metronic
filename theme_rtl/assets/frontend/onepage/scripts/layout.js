@@ -1,10 +1,10 @@
-Layout = function () {
+var Layout = function () {
     var isMobileDevice = function() {
         return (
-            navigator.userAgent.match(/Android/i) ||
-            navigator.userAgent.match(/BlackBerry/i) ||
-            navigator.userAgent.match(/iPhone|iPad|iPod/i) ||
-            navigator.userAgent.match(/Opera Mini/i) ||
+            navigator.userAgent.match(/Android/i) || 
+            navigator.userAgent.match(/BlackBerry/i) || 
+            navigator.userAgent.match(/iPhone|iPad|iPod/i) || 
+            navigator.userAgent.match(/Opera Mini/i) || 
             navigator.userAgent.match(/IEMobile/i)
         );
     }
@@ -38,7 +38,7 @@ Layout = function () {
 
     var handleHeaderPosition = function () {
         var CurrentHeaderPosition = $(".header").offset().top;// current header's vertical position
-
+        
         var headerFix = function(){
             var CurrentWindowPosition = $(window).scrollTop();// current vertical position
             if (CurrentWindowPosition > CurrentHeaderPosition) {
@@ -60,7 +60,7 @@ Layout = function () {
         }
     }
 
-    var handleGo2Top = function () {
+    var handleGo2Top = function () {       
         var Go2TopOperation = function(){
             var CurrentWindowPosition = $(window).scrollTop();// current vertical position
             if (CurrentWindowPosition > 300) {
@@ -112,9 +112,9 @@ Layout = function () {
     var handleMobiToggler = function () {
         $(".mobi-toggler").on("click", function(event) {
             event.preventDefault();//the default action of the event will not be triggered
-
+            
             $(".header").toggleClass("menuOpened");
-            $(".header").find(".header-navigation").toggle(300);
+            $(".header").find(".header-navigation").toggle(300);            
         });
 
         function SlideUpMenu () {
@@ -142,8 +142,8 @@ Layout = function () {
         !function(d,s,id){
             var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}
         }(document,"script","twitter-wjs");
-    }
-
+    }  
+        
     function valignCenterMessageFunction () {
          MessageCurrentElemHeight = $(".message-block .valign-center-elem").height();
 
@@ -178,9 +178,9 @@ Layout = function () {
     }
 
     var handleTheme = function () {
-
+    
         var panel = $('.color-panel');
-
+    
         // handle theme colors
         var setColor = function (color) {
             $('#style-color').attr("href", "../../assets/frontend/onepage/css/themes/" + color + ".css");

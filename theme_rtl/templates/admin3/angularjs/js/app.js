@@ -289,13 +289,13 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         files: [
                             '../../../assets/global/plugins/clockface/css/clockface.css',
-                            '../../../assets/global/plugins/bootstrap-datepicker/css/datepicker3.css',
+                            '../../../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css',
                             '../../../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
                             '../../../assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css',
                             '../../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',
                             '../../../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css',
 
-                            '../../../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                            '../../../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js',
                             '../../../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
                             '../../../assets/global/plugins/clockface/js/clockface.js',
                             '../../../assets/global/plugins/bootstrap-daterangepicker/moment.min.js',

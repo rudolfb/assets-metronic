@@ -4,6 +4,9 @@ Boby
 body {
   background-color: #fff;
 }
+body.page-md {
+  background: white;
+}
 
 /******
 General 
@@ -378,6 +381,9 @@ Page Footer
 .page-prefooter h2 {
   color: #E35B5A;
 }
+.page-prefooter a {
+  color: #E35B5A;
+}
 .page-prefooter .subscribe-form .form-control {
   background: #343b44;
   border-color: #343b44;
@@ -432,8 +438,8 @@ Page Footer
 .scroll-to-top > i {
   color: #657383;
   font-size: 32px;
-  opacity: 0.7;
-  filter: alpha(opacity=70);
+  opacity: 0.7 ;
+  filter: alpha(opacity=70) ;
 }
 
 @media (min-width: 992px) {

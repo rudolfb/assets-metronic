@@ -529,7 +529,6 @@ text-shadow:none;
 }
 
 .tp-caption a {
-color:#ff7302;
 text-shadow:none;
 -webkit-transition:all 0.2s ease-out;
 -moz-transition:all 0.2s ease-out;
@@ -538,7 +537,6 @@ text-shadow:none;
 }
 
 .tp-caption a:hover {
-color:#ffa902;
 }
 
 .tp-caption.thinheadline_dark {

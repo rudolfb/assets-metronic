@@ -12,6 +12,7 @@ var PortletDraggable = function () {
                 connectWith: ".portlet",
                 items: ".portlet", 
                 opacity: 0.8,
+                handle : '.portlet-title',
                 coneHelperSize: true,
                 placeholder: 'portlet-sortable-placeholder',
                 forcePlaceholderSize: true,

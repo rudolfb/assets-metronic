@@ -85,7 +85,7 @@ var TableEditable = function () {
         var tableWrapper = $("#sample_editable_1_wrapper");
 
         tableWrapper.find(".dataTables_length select").select2({
-            showSearchInput: false //hide search box with special css class
+            showSearchInput: true //hide search box with special css class
         }); // initialize select2 dropdown
 
         var nEditing = null;

@@ -196,7 +196,7 @@ var Inbox = function () {
     }
 
     var loadSearchResults = function (el) {
-        var url = 'inbox_search_result.html';
+        var url = 'inbox_inbox.html';
 
         loading.show();
         content.html('');

@@ -1,7 +1,7 @@
 /**
 Core script to handle the entire theme and core functions
 **/
-Layout = function() {
+var Layout = function() {
 
     var layoutImgPath = 'admin/layout2/img/';
 

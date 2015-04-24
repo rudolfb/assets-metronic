@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
-Version: 3.6.3
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 3.8.1
 Author: KeenThemes
 Website: http://www.keenthemes.com/
 Contact: support@keenthemes.com
@@ -30,7 +30,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css"/>
 <link href="../../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
-<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
 <link href="../../assets/admin/pages/css/blog-rtl.css" rel="stylesheet" type="text/css"/>
@@ -80,7 +80,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-bell"></i>
 					<span class="badge badge-default">
 					7 </span>
@@ -190,7 +190,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN INBOX DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-envelope-open"></i>
 					<span class="badge badge-default">
 					4 </span>
@@ -280,7 +280,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN TODO DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-calendar"></i>
 					<span class="badge badge-default">
 					3 </span>
@@ -377,7 +377,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-user">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
 					Nick </span>
@@ -783,7 +783,13 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
+							<a href="form_controls_md.html">
+							<span class="badge badge-roundless badge-danger">new</span>Material Design<br>
+							Form Controls</a>
+						</li>
+						<li>
 							<a href="form_controls.html">
+							Bootstrap<br>
 							Form Controls</a>
 						</li>
 						<li>
@@ -1163,27 +1169,27 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
-							<a href="email_template1/index.html" target="_blank">
+							<a href="email_template1.html">
 							New Email Template 1</a>
 						</li>
 						<li>
-							<a href="email_template2/index.html" target="_blank">
+							<a href="email_template2.html">
 							New Email Template 2</a>
 						</li>
 						<li>
-							<a href="email_template3/index.html" target="_blank">
+							<a href="email_template3.html">
 							New Email Template 3</a>
 						</li>
 						<li>
-							<a href="email_template4/index.html" target="_blank">
+							<a href="email_template4.html">
 							New Email Template 4</a>
 						</li>
 						<li>
-							<a href="email_newsletter.html" target="_blank">
+							<a href="email_newsletter.html">
 							Old Email Template 1</a>
 						</li>
 						<li>
-							<a href="email_system.html" target="_blank">
+							<a href="email_system.html">
 							Old Email Template 2</a>
 						</li>
 					</ul>
@@ -1259,6 +1265,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
 							</li>
 						</ul>
+					</div>
+					<div class="theme-option">
+						<span>
+						Theme Style </span>
+						<select class="layout-style-option form-control input-sm">
+							<option value="square" selected="selected">Square corners</option>
+							<option value="rounded">Rounded corners</option>
+						</select>
 					</div>
 					<div class="theme-option">
 						<span>
@@ -1384,11 +1398,11 @@ License: You must have a valid license purchased only from themeforest(the above
 										<ul class="list-inline blog-tags">
 											<li>
 												<i class="fa fa-tags"></i>
-												<a href="#">
+												<a href="javascript:;">
 												Technology </a>
-												<a href="#">
+												<a href="javascript:;">
 												Education </a>
-												<a href="#">
+												<a href="javascript:;">
 												Internet </a>
 											</li>
 										</ul>
@@ -1397,12 +1411,12 @@ License: You must have a valid license purchased only from themeforest(the above
 										<ul class="list-inline">
 											<li>
 												<i class="fa fa-calendar"></i>
-												<a href="#">
+												<a href="javascript:;">
 												April 16, 2013 </a>
 											</li>
 											<li>
 												<i class="fa fa-comments"></i>
-												<a href="#">
+												<a href="javascript:;">
 												38 Comments </a>
 											</li>
 										</ul>
@@ -1427,12 +1441,12 @@ License: You must have a valid license purchased only from themeforest(the above
 							<hr>
 							<div class="media">
 								<h3>Comments</h3>
-								<a href="#" class="pull-left">
+								<a href="javascript:;" class="pull-left">
 								<img alt="" src="../../assets/admin/pages/media/blog/9.jpg" class="media-object">
 								</a>
 								<div class="media-body">
 									<h4 class="media-heading">Media heading <span>
-									5 hours ago / <a href="#">
+									5 hours ago / <a href="javascript:;">
 									Reply </a>
 									</span>
 									</h4>
@@ -1442,12 +1456,12 @@ License: You must have a valid license purchased only from themeforest(the above
 									<hr>
 									<!-- Nested media object -->
 									<div class="media">
-										<a href="#" class="pull-left">
+										<a href="javascript:;" class="pull-left">
 										<img alt="" src="../../assets/admin/pages/media/blog/5.jpg" class="media-object">
 										</a>
 										<div class="media-body">
 											<h4 class="media-heading">Media heading <span>
-											17 hours ago / <a href="#">
+											17 hours ago / <a href="javascript:;">
 											Reply </a>
 											</span>
 											</h4>
@@ -1459,12 +1473,12 @@ License: You must have a valid license purchased only from themeforest(the above
 									<!--end media-->
 									<hr>
 									<div class="media">
-										<a href="#" class="pull-left">
+										<a href="javascript:;" class="pull-left">
 										<img alt="" src="../../assets/admin/pages/media/blog/7.jpg" class="media-object">
 										</a>
 										<div class="media-body">
 											<h4 class="media-heading">Media heading <span>
-											2 days ago / <a href="#">
+											2 days ago / <a href="javascript:;">
 											Reply </a>
 											</span>
 											</h4>
@@ -1478,12 +1492,12 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 							<!--end media-->
 							<div class="media">
-								<a href="#" class="pull-left">
+								<a href="javascript:;" class="pull-left">
 								<img alt="" src="../../assets/admin/pages/media/blog/6.jpg" class="media-object">
 								</a>
 								<div class="media-body">
 									<h4 class="media-heading">Media heading <span>
-									July 5,2013 / <a href="#">
+									July 5,2013 / <a href="javascript:;">
 									Reply </a>
 									</span>
 									</h4>
@@ -1529,57 +1543,57 @@ License: You must have a valid license purchased only from themeforest(the above
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/2.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/3.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/4.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/5.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/6.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/8.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/10.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/11.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/1.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/2.jpg">
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<img alt="" src="../../assets/admin/pages/media/blog/7.jpg">
 									</a>
 								</li>
@@ -1588,7 +1602,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</div>
 							<h3>Top Entiries</h3>
 							<div class="top-news">
-								<a href="#" class="btn red">
+								<a href="javascript:;" class="btn red">
 								<span>
 								Metronic News </span>
 								<em>Posted on: April 16, 2013</em>
@@ -1597,7 +1611,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								Money, Business, Google </em>
 								<i class="fa fa-briefcase top-news-icon"></i>
 								</a>
-								<a href="#" class="btn green">
+								<a href="javascript:;" class="btn green">
 								<span>
 								Top Week </span>
 								<em>Posted on: April 15, 2013</em>
@@ -1606,7 +1620,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								Internet, Music, People </em>
 								<i class="fa fa-music top-news-icon"></i>
 								</a>
-								<a href="#" class="btn blue">
+								<a href="javascript:;" class="btn blue">
 								<span>
 								Gold Price Falls </span>
 								<em>Posted on: April 14, 2013</em>
@@ -1615,7 +1629,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								USA, Business, Apple </em>
 								<i class="fa fa-globe top-news-icon"></i>
 								</a>
-								<a href="#" class="btn yellow">
+								<a href="javascript:;" class="btn yellow">
 								<span>
 								Study Abroad </span>
 								<em>Posted on: April 13, 2013</em>
@@ -1624,7 +1638,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								Education, Students, Canada </em>
 								<i class="fa fa-book top-news-icon"></i>
 								</a>
-								<a href="#" class="btn purple">
+								<a href="javascript:;" class="btn purple">
 								<span>
 								Top Destinations </span>
 								<em>Posted on: April 12, 2013</em>
@@ -1639,66 +1653,66 @@ License: You must have a valid license purchased only from themeforest(the above
 							<h3>Blog Tags</h3>
 							<ul class="list-inline sidebar-tags">
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Business </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Music </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Internet </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Money </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Google </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> TV Shows </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Education </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> People </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> People </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Math </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Photos </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Electronics </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Apple </a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<i class="fa fa-tags"></i> Canada </a>
 								</li>
 							</ul>
 							<div class="space20">
 							</div>
 							<h3>Tabs</h3>
-							<div class="tabbable tabbable-custom">
+							<div class="tabbable-line">
 								<ul class="nav nav-tabs">
 									<li class="active">
 										<a data-toggle="tab" href="#tab_1_1">
@@ -1738,7 +1752,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<p>
 										 At vero eos et accusamus et iusto odio.
 									</p>
-									<a href="#">
+									<a href="javascript:;">
 									<em>http://t.co/sBav7dm</em>
 									</a>
 									<span>
@@ -1751,7 +1765,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<p>
 										 At vero eos et accusamus et iusto odio.
 									</p>
-									<a href="#">
+									<a href="javascript:;">
 									<em>http://t.co/sBav7dm</em>
 									</a>
 									<span>
@@ -1764,7 +1778,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									<p>
 										 At vero eos et accusamus et iusto odio.
 									</p>
-									<a href="#">
+									<a href="javascript:;">
 									<em>http://t.co/sBav7dm</em>
 									</a>
 									<span>
@@ -1798,7 +1812,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</a>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 						More<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu pull-right" role="menu">
@@ -1961,7 +1975,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											When could you send me the report ? </span>
@@ -1971,7 +1985,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											Its almost done. I will be sending it shortly </span>
@@ -1981,7 +1995,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											Alright. Thanks! :) </span>
@@ -1991,7 +2005,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:16</span>
 											<span class="body">
 											You are most welcome. Sorry for the delay. </span>
@@ -2001,7 +2015,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											No probs. Just take your time :) </span>
@@ -2011,7 +2025,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:40</span>
 											<span class="body">
 											Alright. I just emailed it to you. </span>
@@ -2021,7 +2035,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											Great! Thanks. Will check it right away. </span>
@@ -2031,7 +2045,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:40</span>
 											<span class="body">
 											Please let me know if you have any comment. </span>
@@ -2041,7 +2055,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											Sure. I will check and buzz you if anything needs to be corrected. </span>
@@ -2087,7 +2101,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2196,7 +2210,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2245,7 +2259,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2354,7 +2368,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2437,7 +2451,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
